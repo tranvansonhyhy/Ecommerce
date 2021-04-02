@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Khai báo kiểu cho file tiles -->
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<!-- Khai báo template admin -->
+	<definition name="baseLayoutAdmin"
+		template="/WEB-INF/admin/layout.jsp">
+		<put-attribute name="title" value="Template" />
+		<put-attribute name="header"
+			value="/WEB-INF/admin/header.jsp" />
+		<put-attribute name="sidebar"
+			value="/WEB-INF/admin/sidebar.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/admin/body.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/admin/footer.jsp" />
+	</definition>
+	
+	<definition name="dstaikhoan" extends="baseLayoutAdmin">
+		<put-attribute name="title"
+			value="Quản lý tài khoản" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/DanhSachTaiKhoan.jsp" />	
+	</definition>
+	
+	<definition name="addtaikhoan" extends="baseLayoutAdmin">
+		<put-attribute name="title"
+			value="Quản lý tài khoản" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/ThemMoiTaiKhoan.jsp" />	
+	</definition>
+	
+	<definition name="dssanpham" extends="baseLayoutAdmin">
+		<put-attribute name="title"
+			value="Quản lý tài khoản" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/DanhSachSanPham.jsp" />	
+	</definition>
+	
+	
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+	
+	
+	<!-- Khai báo tạo 1 layout dùng tiles -->
+	<definition name="baseLayoutHome"
+		template="/WEB-INF/home/layout.jsp">
+		<put-attribute name="title" value="Template" />
+		<put-attribute name="header"
+			value="/WEB-INF/home/header.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/home/body.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/home/footer.jsp" />
+	</definition>
+	
+	<definition name="trangChu" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Chợ Phake" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/home/TrangChu.jsp" />
+	</definition>
+	
+	<definition name="shop" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Chợ Phake" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/home/Shop.jsp" />
+	</definition>
+	
+	<definition name="chiTiet" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Chợ Phake" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/home/ChiTiet.jsp" />
+	</definition>
+	
+	<definition name="gioHang" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Chợ Phake" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/home/GioHang.jsp" />
+	</definition>
+	
+	<definition name="thanhToan" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Chợ Phake" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/home/ThanhToan.jsp" />
+	</definition>
+	
+	<definition name="dangKy" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Chợ Phake" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/home/DangKy.jsp" />
+	</definition>
+	
+	<definition name="dangNhap" extends="baseLayoutHome">
+		<put-attribute name="title"
+			value="Chợ Phake" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/home/DangNhap.jsp" />
+	</definition>
+</tiles-definitions>
